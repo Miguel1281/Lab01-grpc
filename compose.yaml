@@ -1,0 +1,8 @@
+
+services:
+  servidor-grpc:
+    build: .
+    container_name: calculadora-grpc
+    ports:
+      - "50051:50051"
+    restart: unless-stopped
